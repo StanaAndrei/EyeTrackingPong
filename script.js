@@ -13,12 +13,11 @@ const enablePhysics = () => {
 }
 
 const enableAI = () => {
-    const deltaPos = 1.3;
     if (puck.y > paddle2.y) {
-        paddle2.update(deltaPos);
+        paddle2.update(1);
     }
     if (puck.y < paddle2.y) {
-        paddle2.update(-deltaPos);
+        paddle2.update(-1);
     }
 }
 
